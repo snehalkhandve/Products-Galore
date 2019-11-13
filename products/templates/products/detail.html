@@ -36,12 +36,9 @@
 </div>
 
 
-<!-- for increasing the count after we upvote ie atleast some action to happen after we click on upvote-->
-
 <form id="upvote" method="POST" action="{% url 'upvote' product.id %}">
 	{% csrf_token %}
 	<input type="hidden" >
 </form>
-<!--This now means we have to create entire html page for upvoting -->
 
 {% endblock %}
